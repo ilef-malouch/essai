@@ -1,0 +1,27 @@
+{
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "(gdb) Lancer",
+                "type": "cppdbg",
+                "request": "launch",
+                "program": "entrer le nom du programme, par exemple ${workspaceFolder}/a.exe",
+                "args": [],
+                "stopAtEntry": false,
+                "cwd": "${workspaceFolder}",
+                "environment": [],
+                "console": "externalTerminal",
+                "MIMode": "gdb",
+                "miDebuggerPath": "/path/to/gdb",
+                "setupCommands": [
+                    {
+                        "description": "Activer l'impression en mode Pretty pour gdb",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    }
+                ]
+            }
+        ]
+    }
+}
